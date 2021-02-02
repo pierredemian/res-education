@@ -53,7 +53,7 @@ if (isset($_POST["email"]) && isset($_POST["pass"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pierre Demian Res.Edu.</title>
+    <title>Pierre Demian</title>
 </head>
 <body>
     <h1>
