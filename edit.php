@@ -187,7 +187,7 @@ $education_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pierre Demian Res. Edu.</title>
+    <title>Pierre Demian</title>
 </head>
 <body">
     <h1>Editing Profile for <?php echo htmlentities($_SESSION["name"]) ?></h1>
