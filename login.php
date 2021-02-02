@@ -3,23 +3,20 @@
     require_once "head.php";
     session_start();
     /*
-    Construir la ruta a la cual va a ser redireccionado
-    en caso de colocar la password correcta o de darle click
-    a "Cancel"
+    Construct
     */
     $host = $_SERVER['HTTP_HOST'];
     $ruta = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
     $url = "http://$host$ruta"; // ruta completa construida
 
-    // si el botón "Cancel fue presionado"
+    // button cancel
 if (isset($_POST["cancel"])) {
     header("Location: $url/index.php");
     die();
 }
 
     /*
-    Verificar si todos los campos del formulario fueron llenados
-    para luego verificar si la contraseña escrita es la correcta
+    verification
     */
 if (isset($_POST["email"]) && isset($_POST["pass"])) {
     unset($SESSION["name"]);
@@ -60,7 +57,7 @@ if (isset($_POST["email"]) && isset($_POST["pass"])) {
 </head>
 <body>
     <h1>
-        Please Log In
+        Please Log in
     </h1>
     <?php
     if (isset($_SESSION["error"])) {
