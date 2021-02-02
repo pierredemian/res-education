@@ -15,3 +15,11 @@ while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
 
 echo json_encode($retval);
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pierre Demian</title>
+</head>
+
+</html>
