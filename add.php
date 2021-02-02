@@ -145,7 +145,7 @@ if (isset($_POST["add"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pierre Demian Res-Edu.</title>
+    <title>Pierre Demian</title>
 </head>
 <body">
     <h1>Adding Profile for <?php echo htmlentities($_SESSION["name"]) ?></h1>
