@@ -8,3 +8,11 @@
         "mysql:host=$HOST;port=$PORT;dbname=$DB_NAME", $DB_USER, $DB_PASSWORD
     );
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pierre Demian</title>
+</head>
+
+</html>
