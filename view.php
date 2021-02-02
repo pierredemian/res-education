@@ -39,7 +39,7 @@ $education_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pierre Demian Res.Edu.</title>
+    <title>Pierre Demian</title>
 </head>
 <body>
     <h1>Profile information</h1>
