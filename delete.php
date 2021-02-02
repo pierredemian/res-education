@@ -53,7 +53,7 @@ $ln = htmlentities($row["last_name"]);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ali Jesus Padron Villasmil</title>
+    <title>Pierre Demian Res. Edu.</title>
 </head>
 <body>
     <h1>Deleting Profile</h1>
