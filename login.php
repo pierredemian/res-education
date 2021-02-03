@@ -7,9 +7,8 @@
     */
     $host = $_SERVER['HTTP_HOST'];
     $ruta = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-    $url = "http://$host$ruta"; // ruta completa construida
-
-    // button cancel
+    $url = "http://$host$ruta"; 
+    
 if (isset($_POST["cancel"])) {
     header("Location: $url/index.php");
     die();
@@ -23,7 +22,7 @@ if (isset($_POST["email"]) && isset($_POST["pass"])) {
     unset($SESSION["user_id"]);
         
     $salt = 'XyZzy12*_';
-    // md5 is generado al concatenar $salt y "pass"
+
     $check = hash("md5", $salt . $_POST["pass"]);
 
     $stmt = $pdo->prepare(
