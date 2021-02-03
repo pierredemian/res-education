@@ -48,3 +48,9 @@ function validateEdu()
     return true;
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pierre Demian</title>
+</head>
