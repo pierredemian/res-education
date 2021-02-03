@@ -56,7 +56,7 @@ if (isset($_POST["email"]) && isset($_POST["pass"])) {
 </head>
 <body>
     <h1>
-        Please Log in
+        Please log in
     </h1>
     <?php
     if (isset($_SESSION["error"])) {
