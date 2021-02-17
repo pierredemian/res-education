@@ -52,18 +52,31 @@ if (isset($_POST["email"]) && isset($_POST["pass"])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pierre Demian</title>
+<title>Pierre Demian</title>
+<?php require_once "head.php"; ?>
 </head>
 <body>
-    <h1>
-        Please log in
-    </h1>
-    <?php
-    if (isset($_SESSION["error"])) {
-        echo('<p style="color: red;">'. $_SESSION["error"]);
-        unset($_SESSION["error"]);
-    }
-    ?>
+<div class="container">
+<h1><?= $profile_id ? "Editing" : "Adding" ?>
+ Profile for <?= htmlentities($_SESSION['name']); ?></h1>
+<?php
+flashMessages();
+
+echo('<form method="post" action="form.php">');
+echo('<div id="profile"><img src="spinner.gif"></div>');
+if ( $profile_id ) {
+    echo('<input type="hidden" name="profile_id" value="'.htmlentities($profile_id).'" />');
+}
+
+echo('<p>Education: <input type="submit" id="addEdu" value="+" style="display:none;">'."\n");
+echo('<div id="edu_fields">'."\n");
+echo('<img src="spinner.gif">');
+echo("</div></p>\n");
+echo('<p>Position: <input type="submit" id="addPos" value="+" style="display:none;">'."\n");
+echo('<div id="position_fields">'."\n");
+echo('<img src="spinner.gif">');
+echo("</div></p>\n");
+?>
     <form method="post">
         <label>Email</label>
         <input type="text" name="email" autocomplete="off" id="id_email">
